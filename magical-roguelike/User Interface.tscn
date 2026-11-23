@@ -99,25 +99,34 @@ theme_override_constants/separation = 10
 layout_mode = 2
 theme_override_constants/separation = 5
 
-[node name="SoundSettingsLabel" type="Label" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=1596599034]
+[node name="MarginContainer" type="MarginContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=299110891]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer" unique_id=1563597042]
+layout_mode = 2
+
+[node name="SoundSettingsLabel" type="Label" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer/VBoxContainer" unique_id=1596599034]
 layout_mode = 2
 text = "Sound Settings"
 horizontal_alignment = 1
 
-[node name="SoundCheckButton" type="CheckButton" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=1942539516]
+[node name="SoundCheckButton" type="CheckButton" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer/VBoxContainer" unique_id=1942539516]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Sound"
 
-[node name="MasterVolumeSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=1778997596]
+[node name="MasterVolumeSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer/VBoxContainer" unique_id=1778997596]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MusicSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=799086486]
+[node name="MusicSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer/VBoxContainer" unique_id=799086486]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="SoundEffectsSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox" unique_id=1838958902]
+[node name="SoundEffectsSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/SoundSettingsVbox/MarginContainer/VBoxContainer" unique_id=1838958902]
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -142,17 +151,15 @@ layout_mode = 2
 text = "Red"
 horizontal_alignment = 1
 
-[node name="RedHBox" type="HBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox" unique_id=904730781]
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox" unique_id=832890242]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="RedHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox/RedHBox" unique_id=13554490]
+[node name="RedHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox/VBoxContainer" unique_id=13554490]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="RedTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox/RedHBox" unique_id=38275422]
+[node name="RedTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/RedVBox/VBoxContainer" unique_id=38275422]
 layout_mode = 2
 
 [node name="GreenVBox" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox" unique_id=542780254]
@@ -165,17 +172,15 @@ layout_mode = 2
 text = "Green"
 horizontal_alignment = 1
 
-[node name="GreenHBox" type="HBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox" unique_id=152357756]
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox" unique_id=856589418]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="GreenHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox/GreenHBox" unique_id=2032283059]
+[node name="GreenHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox/VBoxContainer" unique_id=2032283059]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="GreenTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox/GreenHBox" unique_id=813756787]
+[node name="GreenTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/GreenVBox/VBoxContainer" unique_id=813756787]
 layout_mode = 2
 
 [node name="BlueVBox" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox" unique_id=1256095829]
@@ -188,17 +193,15 @@ layout_mode = 2
 text = "Blue"
 horizontal_alignment = 1
 
-[node name="BlueHBox" type="HBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox" unique_id=771507843]
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox" unique_id=1431373997]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="BlueHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox/BlueHBox" unique_id=643943317]
+[node name="BlueHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox/VBoxContainer" unique_id=643943317]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="BlueTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox/BlueHBox" unique_id=724137031]
+[node name="BlueTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/BlueVBox/VBoxContainer" unique_id=724137031]
 layout_mode = 2
 
 [node name="TransparencyVBox" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox" unique_id=2024121622]
@@ -211,17 +214,18 @@ layout_mode = 2
 text = "Transparency"
 horizontal_alignment = 1
 
-[node name="TransparencyHBox" type="HBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox" unique_id=834733277]
+[node name="TransparencyVBox" type="VBoxContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox" unique_id=397085250]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="TransparencyHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox/TransparencyHBox" unique_id=2085006689]
+[node name="TransparencyHSlider" type="HSlider" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox/TransparencyVBox" unique_id=2085006689]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="TransparencyTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox/TransparencyHBox" unique_id=932491893]
+[node name="TransparencyTextEdit" type="LineEdit" parent="OptionsBackround/OptionsPanel/OptionsVbox/VisualSettingsVBox/ColourPickingHbox/TransparencyVBox/TransparencyVBox" unique_id=932491893]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="OptionsBackround/OptionsPanel/OptionsVbox" unique_id=2127310728]
 layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=487714397]
